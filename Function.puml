@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+interface Binary{
++left: Function
++right: Function
+}
+
+interface Unary {
++function: Function
+}
+
+class Number{
++num: int
+}
+
+class Variable{
++name: String
+}
+
+interface Function{
++resolve(): double
++printFunction: Function
+}
+
+Binary --|> Function
+Unary --|> Function
+Number ..|> Function
+Variable ..|> Function
+
+
+'hago new Sum(Variable, Variable) o numbers
+
+
+@enduml

@@ -1,3 +1,10 @@
 package edu.austral.ingsis.math;
 
-public interface Function {}
+import java.util.Map;
+
+public interface Function {
+
+  public Try<Double, Exception> resolve(Map<String, Double> mapValues);
+
+  public String printFunction();
+}
