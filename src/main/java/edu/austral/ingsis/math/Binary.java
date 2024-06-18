@@ -1,5 +1,6 @@
 package edu.austral.ingsis.math;
 
+import java.util.List;
 import java.util.Map;
 
 public abstract class Binary implements Function {
@@ -17,5 +18,12 @@ public abstract class Binary implements Function {
 
   @Override
   public abstract String printFunction();
-}
 
+  @Override
+  public List<String> listVariables() {
+    List<String> leftVariable = left.listVariables();
+    List<String> rightVariable = right.listVariables();
+    leftVariable.addAll(rightVariable);
+    return leftVariable;
+  }
+}

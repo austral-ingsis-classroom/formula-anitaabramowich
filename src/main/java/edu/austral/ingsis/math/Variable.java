@@ -1,5 +1,7 @@
 package edu.austral.ingsis.math;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 public class Variable implements Function {
@@ -22,5 +24,10 @@ public class Variable implements Function {
   @Override
   public String printFunction() {
     return name;
+  }
+
+  @Override
+  public List<String> listVariables() {
+    return Collections.singletonList(name);
   }
 }

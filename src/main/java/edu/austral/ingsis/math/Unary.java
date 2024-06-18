@@ -1,5 +1,6 @@
 package edu.austral.ingsis.math;
 
+import java.util.List;
 import java.util.Map;
 
 public abstract class Unary implements Function {
@@ -15,4 +16,9 @@ public abstract class Unary implements Function {
 
   @Override
   public abstract String printFunction();
+
+  @Override
+  public List<String> listVariables() {
+    return function.listVariables();
+  }
 }

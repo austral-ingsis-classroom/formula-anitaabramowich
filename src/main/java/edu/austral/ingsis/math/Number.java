@@ -1,5 +1,7 @@
 package edu.austral.ingsis.math;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 public class Number implements Function {
@@ -18,5 +20,10 @@ public class Number implements Function {
   @Override
   public String printFunction() {
     return String.valueOf(value);
+  }
+
+  @Override
+  public List<String> listVariables() {
+    return Collections.emptyList();
   }
 }
