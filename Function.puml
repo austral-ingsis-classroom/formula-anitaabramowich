@@ -28,7 +28,16 @@ Binary --|> Function
 Unary --|> Function
 Number ..|> Function
 Variable ..|> Function
-
+Sum --> Variable
+Multiply --> Variable
+Sub --> Variable
+Div --> Variable
+Sum --> Number
+Abs --> Number
+Abs --> Variable
+Multiply --> Number
+Sub --> Number
+Div --> Number
 
 'hago new Sum(Variable, Variable) o numbers
 
